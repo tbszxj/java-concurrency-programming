@@ -1,1 +1,201 @@
 2020-09-22 23:48:02,871 -  Main.main(Main.java:12) - 123
+2020-10-17 22:45:00,861 -  Main.main(Main.java:12) - 123
+2020-10-18 10:41:44,604 -  com.tbszxj.threadmethods.StartAndRunMethod$1.run(StartAndRunMethod.java:15) - running...
+2020-10-18 10:41:44,609 -  com.tbszxj.threadmethods.StartAndRunMethod.main(StartAndRunMethod.java:21) - do some other things
+2020-10-18 10:41:44,609 -  com.tbszxj.threadmethods.StartAndRunMethod$1.run(StartAndRunMethod.java:15) - running...
+[frame] 2020-10-18 10:46:24,710 - 0    INFO  [main] com.tbszxj.threadmethods.StartAndRunMethod$1:15  - running...
+[frame] 2020-10-18 10:46:24,710 - 0    INFO  [main] com.tbszxj.threadmethods.StartAndRunMethod:21  - do some other things
+[frame] 2020-10-18 10:46:24,710 - 0    INFO  [Thread-0] com.tbszxj.threadmethods.StartAndRunMethod$1:15  - running...
+[frame] 2020-10-18 11:25:02,093 - 0    INFO  [main] com.tbszxj.threadmethods.GetStateMethod:19  - NEW
+[frame] 2020-10-18 11:25:02,096 - 3    INFO  [main] com.tbszxj.threadmethods.GetStateMethod:21  - RUNNABLE
+[frame] 2020-10-18 11:25:02,096 - 3    INFO  [Thread-0] com.tbszxj.threadmethods.GetStateMethod$1:16  - running...
+[frame] 2020-10-18 11:31:21,537 - 0    INFO  [main] com.tbszxj.threadmethods.SleepAndYieldMethod:25  - thread state RUNNABLE
+[frame] 2020-10-18 11:31:22,536 - 999  INFO  [Thread-0] com.tbszxj.threadmethods.SleepAndYieldMethod$1:21  - running
+[frame] 2020-10-18 11:31:22,540 - 1003 INFO  [main] com.tbszxj.threadmethods.SleepAndYieldMethod:29  - thread state TERMINATED
+[frame] 2020-10-18 11:31:45,743 - 0    INFO  [main] com.tbszxj.threadmethods.SleepAndYieldMethod:25  - thread state RUNNABLE
+[frame] 2020-10-18 11:31:46,246 - 503  INFO  [main] com.tbszxj.threadmethods.SleepAndYieldMethod:29  - thread state TIMED_WAITING
+[frame] 2020-10-18 11:31:46,743 - 1000 INFO  [Thread-0] com.tbszxj.threadmethods.SleepAndYieldMethod$1:21  - running
+[frame] 2020-10-18 11:32:10,315 - 0    INFO  [main] com.tbszxj.threadmethods.SleepAndYieldMethod:25  - thread state RUNNABLE
+[frame] 2020-10-18 11:32:10,818 - 503  INFO  [main] com.tbszxj.threadmethods.SleepAndYieldMethod:28  - thread state TIMED_WAITING
+[frame] 2020-10-18 11:32:11,314 - 999  INFO  [Thread-0] com.tbszxj.threadmethods.SleepAndYieldMethod$1:21  - running
+[frame] 2020-10-18 11:32:11,319 - 1004 INFO  [main] com.tbszxj.threadmethods.SleepAndYieldMethod:31  - thread state TERMINATED
+[frame] 2020-10-18 11:44:46,496 - 0    INFO  [Thread-0] com.tbszxj.threadmethods.InterruptMethod$1:16  - enter sleep...
+[frame] 2020-10-18 11:44:46,995 - 499  INFO  [main] com.tbszxj.threadmethods.InterruptMethod:29  - interrupt...
+[frame] 2020-10-18 11:44:46,995 - 499  INFO  [Thread-0] com.tbszxj.threadmethods.InterruptMethod$1:20  - weak up...
+[frame] 2020-10-18 11:44:46,996 - 500  ERROR [Thread-0] com.tbszxj.threadmethods.InterruptMethod$1:21  - sleep interrupted
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at com.tbszxj.threadmethods.InterruptMethod$1.run(InterruptMethod.java:18)
+[frame] 2020-10-18 12:08:54,108 - 0    INFO  [main] com.tbszxj.threadmethods.SleepAndYieldMethod:13  - ======================sleep==================
+[frame] 2020-10-18 12:08:54,115 - 7    INFO  [main] com.tbszxj.threadmethods.SleepAndYieldMethod:32  - thread state RUNNABLE
+[frame] 2020-10-18 12:08:54,616 - 508  INFO  [main] com.tbszxj.threadmethods.SleepAndYieldMethod:35  - thread state TIMED_WAITING
+[frame] 2020-10-18 12:08:55,113 - 1005 INFO  [Thread-0] com.tbszxj.threadmethods.SleepAndYieldMethod$1:28  - running
+[frame] 2020-10-18 12:08:55,116 - 1008 INFO  [main] com.tbszxj.threadmethods.SleepAndYieldMethod:38  - thread state TERMINATED
+[frame] 2020-10-18 12:08:55,116 - 1008 INFO  [main] com.tbszxj.threadmethods.SleepAndYieldMethod:15  - ======================yield==================
+[frame] 2020-10-18 12:08:55,117 - 1009 INFO  [main] com.tbszxj.threadmethods.SleepAndYieldMethod:54  - thread state RUNNABLE
+[frame] 2020-10-18 12:08:55,119 - 1011 INFO  [main] com.tbszxj.threadmethods.SleepAndYieldMethod:57  - thread state TIMED_WAITING
+[frame] 2020-10-18 12:08:56,117 - 2009 INFO  [Thread-1] com.tbszxj.threadmethods.SleepAndYieldMethod$2:50  - running
+[frame] 2020-10-18 12:09:18,878 - 0    INFO  [main] com.tbszxj.threadmethods.SleepAndYieldMethod:13  - ======================sleep==================
+[frame] 2020-10-18 12:09:18,881 - 3    INFO  [Thread-0] com.tbszxj.threadmethods.SleepAndYieldMethod$1:23  - running
+[frame] 2020-10-18 12:09:18,882 - 4    INFO  [main] com.tbszxj.threadmethods.SleepAndYieldMethod:27  - thread state RUNNABLE
+[frame] 2020-10-18 12:09:19,383 - 505  INFO  [main] com.tbszxj.threadmethods.SleepAndYieldMethod:30  - thread state TERMINATED
+[frame] 2020-10-18 12:09:19,883 - 1005 INFO  [main] com.tbszxj.threadmethods.SleepAndYieldMethod:33  - thread state TERMINATED
+[frame] 2020-10-18 12:09:19,883 - 1005 INFO  [main] com.tbszxj.threadmethods.SleepAndYieldMethod:15  - ======================yield==================
+[frame] 2020-10-18 12:09:19,884 - 1006 INFO  [main] com.tbszxj.threadmethods.SleepAndYieldMethod:49  - thread state RUNNABLE
+[frame] 2020-10-18 12:09:19,888 - 1010 INFO  [main] com.tbszxj.threadmethods.SleepAndYieldMethod:52  - thread state TIMED_WAITING
+[frame] 2020-10-18 12:09:20,885 - 2007 INFO  [Thread-1] com.tbszxj.threadmethods.SleepAndYieldMethod$2:45  - running
+[frame] 2020-10-18 12:09:45,168 - 0    INFO  [main] com.tbszxj.threadmethods.SleepAndYieldMethod:13  - ======================sleep==================
+[frame] 2020-10-18 12:09:45,172 - 4    INFO  [main] com.tbszxj.threadmethods.SleepAndYieldMethod:32  - thread state RUNNABLE
+[frame] 2020-10-18 12:09:45,673 - 505  INFO  [main] com.tbszxj.threadmethods.SleepAndYieldMethod:35  - thread state TIMED_WAITING
+[frame] 2020-10-18 12:09:46,172 - 1004 INFO  [Thread-0] com.tbszxj.threadmethods.SleepAndYieldMethod$1:28  - running
+[frame] 2020-10-18 12:09:46,174 - 1006 INFO  [main] com.tbszxj.threadmethods.SleepAndYieldMethod:38  - thread state TERMINATED
+[frame] 2020-10-18 12:09:46,174 - 1006 INFO  [main] com.tbszxj.threadmethods.SleepAndYieldMethod:15  - ======================yield==================
+[frame] 2020-10-18 12:09:46,175 - 1007 INFO  [main] com.tbszxj.threadmethods.SleepAndYieldMethod:54  - thread state RUNNABLE
+[frame] 2020-10-18 12:09:46,178 - 1010 INFO  [main] com.tbszxj.threadmethods.SleepAndYieldMethod:57  - thread state TIMED_WAITING
+[frame] 2020-10-18 12:09:47,175 - 2007 INFO  [Thread-1] com.tbszxj.threadmethods.SleepAndYieldMethod$2:50  - running
+[frame] 2020-10-18 13:13:36,257 - 0    INFO  [Thread-0] com.tbszxj.threadmethods.InterruptMethod$1:18  - enter sleep...
+[frame] 2020-10-18 13:13:36,756 - 499  INFO  [main] com.tbszxj.threadmethods.InterruptMethod:31  - interrupt...
+[frame] 2020-10-18 13:13:36,756 - 499  INFO  [Thread-0] com.tbszxj.threadmethods.InterruptMethod$1:22  - weak up...
+[frame] 2020-10-18 13:13:36,757 - 500  ERROR [Thread-0] com.tbszxj.threadmethods.InterruptMethod$1:23  - sleep interrupted
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at com.tbszxj.threadmethods.InterruptMethod$1.run(InterruptMethod.java:20)
+[frame] 2020-10-18 13:13:45,530 - 0    INFO  [main] com.tbszxj.threadmethods.JoinMethod:20  - ===============without join method start=================
+[frame] 2020-10-18 13:13:45,572 - 42   INFO  [Thread-0] com.tbszxj.threadmethods.JoinMethod:22  - ===============with out join thread start===============
+[frame] 2020-10-18 13:13:45,573 - 43   INFO  [main] com.tbszxj.threadmethods.JoinMethod:32  - result is 0
+[frame] 2020-10-18 13:13:45,574 - 44   INFO  [main] com.tbszxj.threadmethods.JoinMethod:33  - ===============without join method stop=================
+[frame] 2020-10-18 13:13:45,574 - 44   INFO  [main] com.tbszxj.threadmethods.JoinMethod:37  - ===============with join method start=================
+[frame] 2020-10-18 13:13:45,575 - 45   INFO  [Thread-1] com.tbszxj.threadmethods.JoinMethod:39  - ===============with join thread start===============
+[frame] 2020-10-18 13:13:45,578 - 48   INFO  [main] com.tbszxj.threadmethods.JoinMethod:50  - result is 10
+[frame] 2020-10-18 13:13:45,578 - 48   INFO  [main] com.tbszxj.threadmethods.JoinMethod:51  - ===============with join method stop=================
+[frame] 2020-10-18 13:15:05,450 - 0    INFO  [main] com.tbszxj.threadmethods.JoinMethod:20  - ===============without join method start=================
+[frame] 2020-10-18 13:15:05,500 - 50   INFO  [Thread-0] com.tbszxj.threadmethods.JoinMethod:22  - ===============with out join thread start===============
+[frame] 2020-10-18 13:15:05,501 - 51   INFO  [main] com.tbszxj.threadmethods.JoinMethod:32  - result is 0
+[frame] 2020-10-18 13:15:05,501 - 51   INFO  [main] com.tbszxj.threadmethods.JoinMethod:33  - ===============without join method stop=================
+[frame] 2020-10-18 13:15:05,501 - 51   INFO  [main] com.tbszxj.threadmethods.JoinMethod:37  - ===============with join method start=================
+[frame] 2020-10-18 13:15:05,502 - 52   INFO  [Thread-1] com.tbszxj.threadmethods.JoinMethod:39  - ===============with join thread start===============
+[frame] 2020-10-18 13:15:05,506 - 56   INFO  [main] com.tbszxj.threadmethods.JoinMethod:50  - result is 20
+[frame] 2020-10-18 13:15:05,506 - 56   INFO  [main] com.tbszxj.threadmethods.JoinMethod:51  - ===============with join method stop=================
+[jcp] 2020-10-18 19:12:46,551 - 0    INFO  [Thread-0] com.tbszxj.threadmethods.InterruptMethod$1:18  - enter sleep...
+[jcp] 2020-10-18 19:12:47,051 - 500  INFO  [main] com.tbszxj.threadmethods.InterruptMethod:31  - interrupt thread...
+[jcp] 2020-10-18 19:12:47,051 - 500  INFO  [Thread-0] com.tbszxj.threadmethods.InterruptMethod$1:22  - thread has been interrupted...
+[jcp] 2020-10-18 19:12:47,052 - 501  ERROR [Thread-0] com.tbszxj.threadmethods.InterruptMethod$1:23  - sleep interrupted
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at com.tbszxj.threadmethods.InterruptMethod$1.run(InterruptMethod.java:20)
+[jcp] 2020-10-18 19:12:47,053 - 502  INFO  [main] com.tbszxj.threadmethods.InterruptMethod:34  - interrupt flag true
+[jcp] 2020-10-18 19:15:24,573 - 0    INFO  [Thread-0] com.tbszxj.threadmethods.InterruptMethod:16  - enter sleep...
+[jcp] 2020-10-18 19:15:25,072 - 499  INFO  [main] com.tbszxj.threadmethods.InterruptMethod:28  - interrupt thread...
+[jcp] 2020-10-18 19:15:25,072 - 499  INFO  [Thread-0] com.tbszxj.threadmethods.InterruptMethod:20  - thread has been interrupted...
+[jcp] 2020-10-18 19:15:25,073 - 500  ERROR [Thread-0] com.tbszxj.threadmethods.InterruptMethod:21  - sleep interrupted
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at com.tbszxj.threadmethods.InterruptMethod.lambda$main$0(InterruptMethod.java:18)
+	at java.lang.Thread.run(Thread.java:745)
+[jcp] 2020-10-18 19:15:25,074 - 501  INFO  [main] com.tbszxj.threadmethods.InterruptMethod:31  - interrupt flag is : false
+[jcp] 2020-10-18 19:23:50,056 - 0    INFO  [Thread-0] com.tbszxj.threadmethods.InterruptMethod:22  - enter sleep...
+[jcp] 2020-10-18 19:23:50,557 - 501  INFO  [main] com.tbszxj.threadmethods.InterruptMethod:34  - interrupt thread...
+[jcp] 2020-10-18 19:23:50,557 - 501  INFO  [Thread-0] com.tbszxj.threadmethods.InterruptMethod:26  - thread has been interrupted...
+[jcp] 2020-10-18 19:23:50,558 - 502  ERROR [Thread-0] com.tbszxj.threadmethods.InterruptMethod:27  - sleep interrupted
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at com.tbszxj.threadmethods.InterruptMethod.lambda$interruptSleepThread$0(InterruptMethod.java:24)
+	at java.lang.Thread.run(Thread.java:745)
+[jcp] 2020-10-18 19:23:50,558 - 502  INFO  [main] com.tbszxj.threadmethods.InterruptMethod:37  - interrupt flag is : true
+[jcp] 2020-10-18 19:23:50,560 - 504  INFO  [Thread-1] com.tbszxj.threadmethods.InterruptMethod:42  - enter sleep...
+[jcp] 2020-10-18 19:23:51,560 - 1504 INFO  [main] com.tbszxj.threadmethods.InterruptMethod:56  - interrupt thread...
+[jcp] 2020-10-18 19:23:51,560 - 1504 INFO  [main] com.tbszxj.threadmethods.InterruptMethod:59  - interrupt flag is : true
+[jcp] 2020-10-18 19:23:51,560 - 1504 INFO  [Thread-1] com.tbszxj.threadmethods.InterruptMethod:46  - the thread is interrupted
+[jcp] 2020-10-18 19:26:47,101 - 0    INFO  [Thread-0] com.tbszxj.threadmethods.InterruptMethod:22  - enter sleep...
+[jcp] 2020-10-18 19:26:47,611 - 510  INFO  [main] com.tbszxj.threadmethods.InterruptMethod:34  - interrupt thread...
+[jcp] 2020-10-18 19:26:47,611 - 510  INFO  [Thread-0] com.tbszxj.threadmethods.InterruptMethod:26  - thread has been interrupted...
+[jcp] 2020-10-18 19:26:47,611 - 510  ERROR [Thread-0] com.tbszxj.threadmethods.InterruptMethod:27  - sleep interrupted
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at com.tbszxj.threadmethods.InterruptMethod.lambda$interruptSleepThread$0(InterruptMethod.java:24)
+	at java.lang.Thread.run(Thread.java:745)
+[jcp] 2020-10-18 19:26:47,611 - 510  INFO  [main] com.tbszxj.threadmethods.InterruptMethod:37  - interrupt flag is : false
+[jcp] 2020-10-18 19:26:47,611 - 510  INFO  [Thread-1] com.tbszxj.threadmethods.InterruptMethod:42  - enter sleep...
+[jcp] 2020-10-18 19:26:48,122 - 1021 INFO  [main] com.tbszxj.threadmethods.InterruptMethod:56  - interrupt thread...
+[jcp] 2020-10-18 19:26:48,122 - 1021 INFO  [main] com.tbszxj.threadmethods.InterruptMethod:59  - interrupt flag is : true
+[jcp] 2020-10-18 19:26:48,122 - 1021 INFO  [Thread-1] com.tbszxj.threadmethods.InterruptMethod:46  - the thread is interrupted
+[jcp] 2020-10-18 19:27:20,497 - 0    INFO  [Thread-0] com.tbszxj.threadmethods.InterruptMethod:22  - enter sleep...
+[jcp] 2020-10-18 19:27:21,005 - 508  INFO  [main] com.tbszxj.threadmethods.InterruptMethod:34  - interrupt thread...
+[jcp] 2020-10-18 19:27:21,005 - 508  INFO  [Thread-0] com.tbszxj.threadmethods.InterruptMethod:26  - thread has been interrupted...
+[jcp] 2020-10-18 19:27:21,005 - 508  ERROR [Thread-0] com.tbszxj.threadmethods.InterruptMethod:27  - sleep interrupted
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at com.tbszxj.threadmethods.InterruptMethod.lambda$interruptSleepThread$0(InterruptMethod.java:24)
+	at java.lang.Thread.run(Thread.java:745)
+[jcp] 2020-10-18 19:27:21,005 - 508  INFO  [main] com.tbszxj.threadmethods.InterruptMethod:37  - interrupt flag is : true
+[jcp] 2020-10-18 19:27:21,005 - 508  INFO  [Thread-1] com.tbszxj.threadmethods.InterruptMethod:42  - enter sleep...
+[jcp] 2020-10-18 19:27:21,515 - 1018 INFO  [main] com.tbszxj.threadmethods.InterruptMethod:56  - interrupt thread...
+[jcp] 2020-10-18 19:27:21,515 - 1018 INFO  [main] com.tbszxj.threadmethods.InterruptMethod:59  - interrupt flag is : true
+[jcp] 2020-10-18 19:27:21,515 - 1018 INFO  [Thread-1] com.tbszxj.threadmethods.InterruptMethod:46  - the thread is interrupted
+[jcp] 2020-10-18 19:27:31,402 - 0    INFO  [Thread-0] com.tbszxj.threadmethods.InterruptMethod:22  - enter sleep...
+[jcp] 2020-10-18 19:27:31,915 - 513  INFO  [main] com.tbszxj.threadmethods.InterruptMethod:34  - interrupt thread...
+[jcp] 2020-10-18 19:27:31,915 - 513  INFO  [Thread-0] com.tbszxj.threadmethods.InterruptMethod:26  - thread has been interrupted...
+[jcp] 2020-10-18 19:27:31,915 - 513  ERROR [Thread-0] com.tbszxj.threadmethods.InterruptMethod:27  - sleep interrupted
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at com.tbszxj.threadmethods.InterruptMethod.lambda$interruptSleepThread$0(InterruptMethod.java:24)
+	at java.lang.Thread.run(Thread.java:745)
+[jcp] 2020-10-18 19:27:31,915 - 513  INFO  [main] com.tbszxj.threadmethods.InterruptMethod:37  - interrupt flag is : true
+[jcp] 2020-10-18 19:27:31,915 - 513  INFO  [Thread-1] com.tbszxj.threadmethods.InterruptMethod:42  - enter sleep...
+[jcp] 2020-10-18 19:27:32,426 - 1024 INFO  [main] com.tbszxj.threadmethods.InterruptMethod:56  - interrupt thread...
+[jcp] 2020-10-18 19:27:32,426 - 1024 INFO  [main] com.tbszxj.threadmethods.InterruptMethod:59  - interrupt flag is : true
+[jcp] 2020-10-18 19:27:32,426 - 1024 INFO  [Thread-1] com.tbszxj.threadmethods.InterruptMethod:46  - the thread is interrupted
+[jcp] 2020-10-18 19:27:54,486 - 0    INFO  [Thread-0] com.tbszxj.threadmethods.InterruptMethod:22  - enter sleep...
+[jcp] 2020-10-18 19:27:54,996 - 510  INFO  [main] com.tbszxj.threadmethods.InterruptMethod:34  - interrupt thread...
+[jcp] 2020-10-18 19:27:54,996 - 510  INFO  [Thread-0] com.tbszxj.threadmethods.InterruptMethod:26  - thread has been interrupted...
+[jcp] 2020-10-18 19:27:54,996 - 510  ERROR [Thread-0] com.tbszxj.threadmethods.InterruptMethod:27  - sleep interrupted
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at com.tbszxj.threadmethods.InterruptMethod.lambda$interruptSleepThread$0(InterruptMethod.java:24)
+	at java.lang.Thread.run(Thread.java:745)
+[jcp] 2020-10-18 19:27:54,996 - 510  INFO  [main] com.tbszxj.threadmethods.InterruptMethod:37  - interrupt flag is : true
+[jcp] 2020-10-18 19:27:54,996 - 510  INFO  [Thread-1] com.tbszxj.threadmethods.InterruptMethod:42  - enter sleep...
+[jcp] 2020-10-18 19:27:55,510 - 1024 INFO  [main] com.tbszxj.threadmethods.InterruptMethod:56  - interrupt thread...
+[jcp] 2020-10-18 19:27:55,510 - 1024 INFO  [main] com.tbszxj.threadmethods.InterruptMethod:59  - interrupt flag is : true
+[jcp] 2020-10-18 19:27:55,510 - 1024 INFO  [Thread-1] com.tbszxj.threadmethods.InterruptMethod:46  - the thread is interrupted
+[jcp] 2020-10-18 19:28:41,647 - 0    INFO  [Thread-0] com.tbszxj.threadmethods.InterruptMethod:22  - enter sleep...
+[jcp] 2020-10-18 19:28:42,148 - 501  INFO  [main] com.tbszxj.threadmethods.InterruptMethod:35  - interrupt thread...
+[jcp] 2020-10-18 19:28:42,148 - 501  INFO  [Thread-0] com.tbszxj.threadmethods.InterruptMethod:26  - thread has been interrupted...
+[jcp] 2020-10-18 19:28:42,148 - 501  INFO  [Thread-1] com.tbszxj.threadmethods.InterruptMethod:41  - enter sleep...
+[jcp] 2020-10-18 19:28:42,150 - 503  INFO  [Thread-0] com.tbszxj.threadmethods.InterruptMethod:27  - interrupt flag is : false
+[jcp] 2020-10-18 19:28:42,151 - 504  ERROR [Thread-0] com.tbszxj.threadmethods.InterruptMethod:28  - sleep interrupted
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at com.tbszxj.threadmethods.InterruptMethod.lambda$interruptSleepThread$0(InterruptMethod.java:24)
+	at java.lang.Thread.run(Thread.java:745)
+[jcp] 2020-10-18 19:28:42,662 - 1015 INFO  [main] com.tbszxj.threadmethods.InterruptMethod:55  - interrupt thread...
+[jcp] 2020-10-18 19:28:42,662 - 1015 INFO  [main] com.tbszxj.threadmethods.InterruptMethod:58  - interrupt flag is : true
+[jcp] 2020-10-18 19:28:42,662 - 1015 INFO  [Thread-1] com.tbszxj.threadmethods.InterruptMethod:45  - the thread is interrupted
+[jcp] 2020-10-18 19:57:14,552 - 0    INFO  [Thread-0] com.tbszxj.application.TwoPhaseTermination:36  - 执行监控记录
+[jcp] 2020-10-18 19:57:15,558 - 1006 INFO  [Thread-0] com.tbszxj.application.TwoPhaseTermination:36  - 执行监控记录
+[jcp] 2020-10-18 19:57:16,558 - 2006 INFO  [Thread-0] com.tbszxj.application.TwoPhaseTermination:36  - 执行监控记录
+[jcp] 2020-10-18 19:57:17,559 - 3007 INFO  [Thread-0] com.tbszxj.application.TwoPhaseTermination:36  - 执行监控记录
+[jcp] 2020-10-18 19:57:18,552 - 4000 ERROR [Thread-0] com.tbszxj.application.TwoPhaseTermination:38  - sleep interrupted
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at com.tbszxj.application.TwoPhaseTermination.lambda$startMonitor$0(TwoPhaseTerminationPattern.java:35)
+	at java.lang.Thread.run(Thread.java:745)
+[jcp] 2020-10-18 19:57:18,557 - 4005 INFO  [Thread-0] com.tbszxj.application.TwoPhaseTermination:31  - 善后处理
+[jcp] 2020-10-18 20:07:38,605 - 0    INFO  [Thread-0] com.tbszxj.threadmethods.InterruptParkMethod:17  - park...
+[jcp] 2020-10-18 20:07:39,604 - 999  INFO  [Thread-0] com.tbszxj.threadmethods.InterruptParkMethod:19  - unpark...
+[jcp] 2020-10-18 20:07:39,606 - 1001 INFO  [Thread-0] com.tbszxj.threadmethods.InterruptParkMethod:20  - interrupt status true
+[jcp] 2020-10-18 20:07:39,607 - 1002 INFO  [Thread-0] com.tbszxj.threadmethods.InterruptParkMethod:24  - the second park is disabled
+[jcp] 2020-10-18 20:07:54,815 - 0    INFO  [Thread-0] com.tbszxj.threadmethods.InterruptParkMethod:17  - park...
+[jcp] 2020-10-18 20:07:56,816 - 2001 INFO  [Thread-0] com.tbszxj.threadmethods.InterruptParkMethod:19  - unpark...
+[jcp] 2020-10-18 20:07:56,818 - 2003 INFO  [Thread-0] com.tbszxj.threadmethods.InterruptParkMethod:20  - interrupt status true
+[jcp] 2020-10-18 20:07:56,819 - 2004 INFO  [Thread-0] com.tbszxj.threadmethods.InterruptParkMethod:24  - the second park is disabled
+[jcp] 2020-10-18 20:08:53,945 - 0    INFO  [Thread-0] com.tbszxj.threadmethods.InterruptParkMethod:17  - park...
+[jcp] 2020-10-18 20:08:55,944 - 1999 INFO  [Thread-0] com.tbszxj.threadmethods.InterruptParkMethod:19  - unpark...
+[jcp] 2020-10-18 20:08:55,949 - 2004 INFO  [Thread-0] com.tbszxj.threadmethods.InterruptParkMethod:21  - interrupt status true
+[jcp] 2020-10-18 20:08:55,949 - 2004 INFO  [Thread-0] com.tbszxj.threadmethods.InterruptParkMethod:25  - the second park is disabled
+[jcp] 2020-10-18 20:09:40,302 - 0    INFO  [Thread-0] com.tbszxj.threadmethods.InterruptParkMethod:17  - park...
+[jcp] 2020-10-18 20:09:42,302 - 2000 INFO  [Thread-0] com.tbszxj.threadmethods.InterruptParkMethod:19  - unpark...
+[jcp] 2020-10-18 20:09:42,304 - 2002 INFO  [Thread-0] com.tbszxj.threadmethods.InterruptParkMethod:21  - interrupt status true
+[jcp] 2020-10-18 22:44:54,792 - 0    INFO  [Thread-0] com.tbszxj.threadmethods.InterruptParkMethod:17  - park...
+[jcp] 2020-10-18 22:45:46,304 - 51512 INFO  [Thread-0] com.tbszxj.threadmethods.InterruptParkMethod:19  - unpark...
+[jcp] 2020-10-18 22:45:47,081 - 52289 INFO  [Thread-0] com.tbszxj.threadmethods.InterruptParkMethod:21  - interrupt status true
